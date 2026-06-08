@@ -1,4 +1,4 @@
-# Library Management System (MAD Project)
+# Library Management System 
 
 A native Android application developed using Java and XML, designed to handle digital library administration and member activities. The system features separate dashboard environments for Administrators and Users, driven by a localized SQLite architecture to streamline book discovery, pre-booking, issue management, and real-time fine calculation.
 
