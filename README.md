@@ -149,6 +149,11 @@ git clone https://github.com/your-username/your-repo-name.git
 5. Click the green **Run** button or press `Shift + F10` to compile and deploy the APK.
 
 ---
+## Screenshots
+
+| Login Page | User Dashboard | User Search | Prebook Screen | Admin Updates |
+| :---: | :---: | :---: | :---: | :---: |
+| <img src="screenshots/login page.jpg" width="160"> | <img src="screenshots/user dashboard.jpg" width="160"> | <img src="screenshots/user search.jpg" width="160"> | <img src="screenshots/prebook.jpg" width="160"> | <img src="screenshots/updates.jpg" width="160"> |
 
 ## License
 
