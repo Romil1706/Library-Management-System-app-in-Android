@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent">
+
+   <TextView
+       android:id="@+id/title"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Issue Book"
+       android:textSize="24sp"
+       android:textStyle="bold"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       android:layout_margin="20dp"/>
+
+   <EditText
+       android:id="@+id/bookName"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:hint="Book Name"
+       app:layout_constraintTop_toBottomOf="@id/title"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       android:layout_margin="20dp"/>
+
+   <EditText
+       android:id="@+id/customerName"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:hint="Customer Name"
+       app:layout_constraintTop_toBottomOf="@id/bookName"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       android:layout_marginHorizontal="20dp"/>
+
+   <TextView
+       android:id="@+id/issueLabel"
+       android:layout_width="103dp"
+       android:layout_height="51dp"
+       android:layout_marginStart="20dp"
+       android:layout_marginTop="10dp"
+       android:text="Issue Date"
+       android:textSize="20sp"
+       android:textStyle="bold"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/customerName" />
+
+   <DatePicker
+       android:id="@+id/issuePicker"
+       android:layout_width="295dp"
+       android:layout_height="88dp"
+       android:layout_marginHorizontal="20dp"
+       android:layout_marginTop="4dp"
+       android:calendarViewShown="false"
+       android:datePickerMode="spinner"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.493"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/issueLabel" />
+
+   <TextView
+       android:id="@+id/returnLabel"
+       android:layout_width="120dp"
+       android:layout_height="49dp"
+       android:layout_marginTop="4dp"
+       android:text="Return Date"
+       android:textSize="20sp"
+       android:textStyle="bold"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.01"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/issuePicker" />
+
+   <DatePicker
+       android:id="@+id/returnPicker"
+       android:layout_width="290dp"
+       android:layout_height="92dp"
+       android:layout_marginHorizontal="20dp"
+       android:layout_marginTop="8dp"
+       android:calendarViewShown="false"
+       android:datePickerMode="spinner"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.539"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/returnLabel" />
+
+   <Button
+       android:id="@+id/issueBtn"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20dp"
+       android:layout_marginBottom="48dp"
+       android:text="Issue "
+       style="@style/RoundedButton"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.498"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/returnPicker"
+       app:layout_constraintVertical_bias="0.02" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
