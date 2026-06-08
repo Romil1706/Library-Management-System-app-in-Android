@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent">
+
+   <TextView
+       android:id="@+id/title"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Welcome to Public Library!"
+       android:textSize="30sp"
+       android:textStyle="bold"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.545"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.082" />
+
+   <EditText
+       android:id="@+id/username"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:layout_margin="30dp"
+       android:hint="Username"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.205" />
+
+   <EditText
+       android:id="@+id/password"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:layout_margin="30dp"
+       android:hint="Password"
+       android:inputType="textPassword"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.633"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.295" />
+
+   <Button
+       android:id="@+id/loginUserBtn"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:layout_margin="20dp"
+       android:text="User Login"
+       style="@style/RoundedButton"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.75"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.471" />
+
+   <Button
+       android:id="@+id/loginAdminBtn"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:layout_margin="20dp"
+       android:text="Admin Login"
+       style="@style/RoundedButton"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.925"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.606" />
+
+   <Button
+       android:id="@+id/registerUserBtn"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:layout_margin="20dp"
+       android:text="Register User"
+       style="@style/RoundedButton"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="1.0"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.724" />
+
+   <Button
+       android:id="@+id/registerAdminBtn"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:layout_margin="20dp"
+       android:layout_marginTop="232dp"
+       android:text="Register Admin"
+       style="@style/RoundedButton"
+       app:layout_constraintBottom_toBottomOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintHorizontal_bias="0.375"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="0.842" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
